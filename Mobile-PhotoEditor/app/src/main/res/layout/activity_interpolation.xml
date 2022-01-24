@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".rotation.RotationActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/interpolationToolbar"
+        style="@style/Theme.PhotoEditor.Header.Effect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/interpolation" />
+
+    <ImageView
+        android:id="@+id/interpolationImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/side_margin"
+        android:layout_marginTop="@dimen/standart"
+        android:layout_marginEnd="@dimen/side_margin"
+        android:layout_marginBottom="@dimen/standart"
+        android:contentDescription="@string/current_image_desc"
+        android:src="@mipmap/ic_launcher"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/interpolationToolbar"
+        app:layout_constraintBottom_toTopOf="@id/applyTrilInterpolationButton"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/applyBilInterpolationButton"
+        style="@style/Theme.PhotoEditor.Button.Accent"
+        android:text="@string/bilinear"
+        android:layout_width="0dp"
+        android:layout_marginBottom="@dimen/half"
+        android:layout_marginEnd="@dimen/half"
+        app:layout_constraintBottom_toTopOf="@+id/undoButton"
+        app:layout_constraintEnd_toStartOf="@id/applyTrilInterpolationButton"
+        app:layout_constraintStart_toStartOf="@id/interpolationImage" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/applyTrilInterpolationButton"
+        style="@style/Theme.PhotoEditor.Button.Accent"
+        android:text="@string/trilinear"
+        android:layout_marginBottom="@dimen/half"
+        android:layout_marginStart="@dimen/half"
+        app:layout_constraintBottom_toTopOf="@+id/undoButton"
+        app:layout_constraintStart_toEndOf="@id/applyBilInterpolationButton"
+        app:layout_constraintEnd_toEndOf="@+id/interpolationImage" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/undoButton"
+        style="@style/Theme.PhotoEditor.Button.Undo"
+        android:layout_marginBottom="@dimen/standart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/applyTrilInterpolationButton"
+        app:layout_constraintStart_toStartOf="@id/applyBilInterpolationButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

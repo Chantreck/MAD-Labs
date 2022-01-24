@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".rotation.RotationActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/scalingToolbar"
+        style="@style/Theme.PhotoEditor.Header.Effect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/scaling" />
+
+    <ImageView
+        android:id="@+id/scalingImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/side_margin"
+        android:layout_marginTop="@dimen/standart"
+        android:layout_marginEnd="@dimen/side_margin"
+        android:layout_marginBottom="@dimen/standart"
+        android:contentDescription="@string/current_image_desc"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintBottom_toTopOf="@id/scalingAngleContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scalingToolbar" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/scalingAngleContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/standart"
+        android:hint="@string/scaling_coef"
+        app:boxStrokeColor="@color/accent"
+        app:layout_constraintBottom_toTopOf="@+id/applyScalingButton"
+        app:layout_constraintEnd_toEndOf="@+id/scalingImage"
+        app:layout_constraintStart_toStartOf="@+id/scalingImage">
+
+        <EditText
+            android:id="@+id/scalingAnglePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal|numberSigned"
+            android:importantForAutofill="no"
+            android:ems="10"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/applyScalingButton"
+        style="@style/Theme.PhotoEditor.Button.Accent.Apply"
+        android:layout_marginBottom="@dimen/half"
+        app:layout_constraintBottom_toTopOf="@+id/undoButton"
+        app:layout_constraintEnd_toEndOf="@+id/scalingAngleContainer"
+        app:layout_constraintStart_toStartOf="@id/scalingAngleContainer" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/undoButton"
+        style="@style/Theme.PhotoEditor.Button.Undo"
+        android:layout_marginBottom="@dimen/standart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/applyScalingButton"
+        app:layout_constraintStart_toStartOf="@id/applyScalingButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CubeActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/cubeToolbar"
+        style="@style/Theme.PhotoEditor.Header.Effect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_back_button"
+        app:title="@string/cube_task_name"/>
+
+    <com.example.photoeditor.cube.model.DrawView
+        android:id="@+id/cubeView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/standart"
+        app:layout_constraintTop_toBottomOf="@id/cubeToolbar"
+        app:layout_constraintBottom_toTopOf="@+id/rotateButton"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/rotateButton"
+        style="@style/Theme.PhotoEditor.Button.Accent"
+        android:layout_marginStart="@dimen/standart"
+        android:layout_marginEnd="@dimen/standart"
+        android:layout_marginBottom="@dimen/standart"
+        android:text="@string/rotate_cube_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/resetButton"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/resetButton"
+        style="@style/Theme.PhotoEditor.Button"
+        android:layout_marginBottom="@dimen/standart"
+        android:text="@string/reset_cube_button"
+        app:backgroundTint="@color/buttonBackground"
+        app:layout_constraintStart_toStartOf="@+id/rotateButton"
+        app:layout_constraintEnd_toEndOf="@+id/rotateButton"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

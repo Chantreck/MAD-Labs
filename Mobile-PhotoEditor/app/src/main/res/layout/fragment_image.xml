@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ImageFragment">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/imageSectionHeader"
+        style="@style/Theme.PhotoEditor.Header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/image_section_header" />
+
+    <ImageView
+        android:id="@+id/currentImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/side_margin"
+        android:layout_marginTop="@dimen/standart"
+        android:layout_marginEnd="@dimen/side_margin"
+        android:layout_marginBottom="@dimen/standart"
+        android:contentDescription="@string/image_desc"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintBottom_toTopOf="@id/changePictureButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageSectionHeader" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/changePictureButton"
+        style="@style/Theme.PhotoEditor.Button.Accent"
+        android:layout_marginBottom="@dimen/standart"
+        android:text="@string/change_picture_button"
+        app:icon="@drawable/ic_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/currentImage"
+        app:layout_constraintStart_toStartOf="@id/currentImage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
