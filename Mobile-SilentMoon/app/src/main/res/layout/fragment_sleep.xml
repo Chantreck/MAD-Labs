@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/night_bg">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".home_activity.SleepFragment">
+
+        <ImageView
+            style="@style/full_width_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sleep_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            style="@style/bold_night_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/y_margin"
+            android:layout_marginTop="@dimen/double_y_margin"
+            android:text="@string/sleep_stories"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/descriptionTextView"
+            style="@style/sleep_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/y_margin"
+            android:layout_marginTop="@dimen/padding"
+            android:text="@string/sleep_stories_desc"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titleTextView" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/filterRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/half_x_margin"
+            android:layout_marginTop="@dimen/z_margin"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@id/descriptionTextView"
+            tools:itemCount="5"
+            tools:listitem="@layout/item_filter" />
+
+        <ImageView
+            android:id="@+id/oceanMoonImageView"
+            style="@style/full_width_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/x_margin"
+            android:layout_marginTop="@dimen/y_margin"
+            android:src="@drawable/ocean_moon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/filterRecyclerView" />
+
+        <TextView
+            android:id="@+id/oceanMoonTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/half_x_margin"
+            android:layout_marginBottom="@dimen/half_y_margin"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/ocean_moon"
+            android:textColor="@color/ocean_moon"
+            android:textSize="@dimen/title"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toTopOf="@id/oceanMoonDescTextView"
+            app:layout_constraintEnd_toEndOf="@id/oceanMoonImageView"
+            app:layout_constraintStart_toStartOf="@id/oceanMoonImageView" />
+
+        <TextView
+            android:id="@+id/oceanMoonDescTextView"
+            style="@style/sleep_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/x_margin"
+            android:layout_marginBottom="@dimen/padding"
+            android:text="@string/ocean_moon_desc"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toTopOf="@id/startButton"
+            app:layout_constraintEnd_toEndOf="@id/oceanMoonImageView"
+            app:layout_constraintStart_toStartOf="@id/oceanMoonImageView" />
+
+        <Button
+            android:id="@+id/startButton"
+            style="@style/card_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x_margin"
+            android:backgroundTint="@color/light_button"
+            android:text="@string/start"
+            android:textColor="@color/dark"
+            app:layout_constraintBottom_toBottomOf="@id/oceanMoonImageView"
+            app:layout_constraintEnd_toEndOf="@id/oceanMoonImageView"
+            app:layout_constraintStart_toStartOf="@id/oceanMoonImageView" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cardsRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/half_x_margin"
+            android:layout_marginTop="@dimen/x_margin"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/oceanMoonImageView"
+            app:spanCount="2"
+            tools:itemCount="4"
+            tools:listitem="@layout/item_meditation" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

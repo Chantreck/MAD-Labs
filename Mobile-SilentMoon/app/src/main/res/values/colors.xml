@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="dark">#3F414E</color>
+    <color name="gray">#A1A4B2</color>
+    <color name="light">#FFECCC</color>
+    <color name="light_gray">#FEFFFE</color>
+    <color name="night">#E6E7F2</color>
+    <color name="dark_gray">#98A1BD</color>
+
+    <color name="form_background">#F2F3F7</color>
+    <color name="accent">#8E97FD</color>
+    <color name="facebook">#7583CA</color>
+    <color name="light_button">#EBEAEC</color>
+    <color name="divider">#26ADB8D9</color>
+
+    <color name="light_play">#F6F1FB</color>
+    <color name="filter_light_inactive">#A0A3B1</color>
+    <color name="filter_night_inactive">#586894</color>
+
+    <color name="daily_calm">#5A6175</color>
+
+    <color name="night_bg">#03174C</color>
+    <color name="ocean_moon">#FFE7BF</color>
+    <color name="music_bg">#FAF7F2</color>
+    <color name="track">#80A0A3B1</color>
+    <color name="track_halo">#403F414E</color>
+    <color name="track_night_active">#E6E7F2</color>
+    <color name="track_night_inactive">#8047557E</color>
+
+    <color name="green">#6CB28E</color>
+</resources>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/accent"
+    android:fitsSystemWindows="true"
+    tools:context=".welcome_activity.WelcomeActivity">
+
+    <ImageView
+        android:id="@+id/backgroundImageView"
+        style="@style/full_width_image"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/welcome_bg" />
+
+    <TextView
+        android:id="@+id/silentTextView"
+        style="@style/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/silent"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/appLogoImageView"
+        app:layout_constraintEnd_toStartOf="@id/appLogoImageView"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/appLogoImageView" />
+
+    <ImageView
+        android:id="@+id/appLogoImageView"
+        android:layout_width="@dimen/app_logo_size"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/app_title_spacing"
+        android:layout_marginTop="@dimen/y_margin"
+        android:adjustViewBounds="true"
+        app:layout_constraintLeft_toRightOf="@id/silentTextView"
+        app:layout_constraintRight_toLeftOf="@id/moonTextView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/app_logo_alt" />
+
+    <TextView
+        android:id="@+id/moonTextView"
+        style="@style/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/moon"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/appLogoImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/appLogoImageView"
+        app:layout_constraintTop_toTopOf="@id/appLogoImageView" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        style="@style/light_header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/y_margin"
+        android:layout_marginTop="@dimen/y_margin"
+        android:layout_marginEnd="@dimen/y_margin"
+        android:text="@string/welcome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appLogoImageView" />
+
+    <TextView
+        android:id="@+id/subtitleTextView"
+        style="@style/centered_light_paragraph"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y_margin"
+        android:text="@string/welcome_subtitle"
+        app:layout_constraintEnd_toEndOf="@id/titleTextView"
+        app:layout_constraintStart_toStartOf="@id/titleTextView"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView" />
+
+    <ImageView
+        android:id="@+id/buttonBgImageView"
+        style="@style/full_width_image"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/getStartedButton"
+        app:srcCompat="@drawable/welcome_button_bg" />
+
+    <ImageView
+        android:id="@+id/illustrationImageView"
+        style="@style/full_width_image"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/buttonBgImageView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/welcome_illustration" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/y_margin"
+        android:layout_marginBottom="@dimen/half_x_margin"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/welcome_woman"
+        app:layout_constraintBottom_toBottomOf="@id/illustrationImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subtitleTextView" />
+
+    <Button
+        android:id="@+id/getStartedButton"
+        style="@style/light_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/double_padding"
+        android:text="@string/get_started"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/titleTextView"
+        app:layout_constraintRight_toRightOf="@id/titleTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

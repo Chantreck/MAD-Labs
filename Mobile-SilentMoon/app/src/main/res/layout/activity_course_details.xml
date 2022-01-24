@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".course_details_activity.CourseDetailsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|snap">
+
+            <ImageView
+                android:id="@+id/backgroundImageView"
+                style="@style/full_width_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_collapseMode="parallax"
+                app:srcCompat="@drawable/sun_bg" />
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/controlsToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/double_padding"
+                android:paddingStart="@dimen/x_margin"
+                android:paddingEnd="@dimen/controls_padding"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/downloadImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    app:srcCompat="@drawable/ic_download_dark" />
+
+                <ImageView
+                    android:id="@+id/likeImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="@dimen/controls_padding"
+                    app:srcCompat="@drawable/ic_like_dark" />
+
+            </com.google.android.material.appbar.MaterialToolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|snap|enterAlways">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/centerGuideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <TextView
+                android:id="@+id/titleTextView"
+                style="@style/bold_left_header"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x_margin"
+                android:layout_marginTop="@dimen/padding"
+                android:layout_marginEnd="@dimen/x_margin"
+                android:text="@string/happy_morning"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/courseTextView"
+                style="@style/bold_caps_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding"
+                android:text="@string/course"
+                app:layout_constraintEnd_toEndOf="@id/titleTextView"
+                app:layout_constraintStart_toStartOf="@id/titleTextView"
+                app:layout_constraintTop_toBottomOf="@id/titleTextView" />
+
+            <TextView
+                android:id="@+id/descriptionTextView"
+                style="@style/paragraph"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x_margin"
+                android:text="@string/course_desc"
+                app:layout_constraintEnd_toEndOf="@id/courseTextView"
+                app:layout_constraintStart_toStartOf="@id/courseTextView"
+                app:layout_constraintTop_toBottomOf="@id/courseTextView" />
+
+            <ImageView
+                android:id="@+id/favIconImageView"
+                android:layout_width="@dimen/padding"
+                android:layout_height="@dimen/padding"
+                android:src="@drawable/ic_favourite"
+                app:layout_constraintBottom_toBottomOf="@id/favouritesTextView"
+                app:layout_constraintStart_toStartOf="@id/descriptionTextView"
+                app:layout_constraintTop_toTopOf="@id/favouritesTextView" />
+
+            <TextView
+                android:id="@+id/favouritesTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/half_x_margin"
+                android:layout_marginTop="@dimen/y_margin"
+                android:text="@string/favourites"
+                android:textColor="@color/gray"
+                app:layout_constraintEnd_toStartOf="@id/centerGuideline"
+                app:layout_constraintStart_toEndOf="@id/favIconImageView"
+                app:layout_constraintTop_toBottomOf="@id/descriptionTextView" />
+
+            <ImageView
+                android:id="@+id/listeningIconImageView"
+                android:layout_width="@dimen/padding"
+                android:layout_height="@dimen/padding"
+                android:layout_marginLeft="@dimen/padding"
+                android:src="@drawable/ic_speakers"
+                app:layout_constraintBottom_toBottomOf="@id/listeningTextView"
+                app:layout_constraintStart_toEndOf="@id/centerGuideline"
+                app:layout_constraintTop_toTopOf="@id/listeningTextView" />
+
+            <TextView
+                android:id="@+id/listeningTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/half_x_margin"
+                android:layout_marginTop="@dimen/y_margin"
+                android:text="@string/listening"
+                android:textColor="@color/gray"
+                app:layout_constraintEnd_toEndOf="@id/descriptionTextView"
+                app:layout_constraintStart_toEndOf="@id/listeningIconImageView"
+                app:layout_constraintTop_toBottomOf="@id/descriptionTextView" />
+
+            <TextView
+                android:id="@+id/narratorTextView"
+                style="@style/dark_subsection"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y_margin"
+                android:layout_marginBottom="@dimen/y_margin"
+                android:text="@string/narrator"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/descriptionTextView"
+                app:layout_constraintStart_toStartOf="@id/descriptionTextView"
+                app:layout_constraintTop_toBottomOf="@id/favouritesTextView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabIndicatorColor="@color/accent"
+            app:tabIndicatorFullWidth="false"
+            app:tabIndicatorHeight="2dp"
+            app:tabSelectedTextColor="?android:attr/textColorPrimaryInverse">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/male" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/female" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

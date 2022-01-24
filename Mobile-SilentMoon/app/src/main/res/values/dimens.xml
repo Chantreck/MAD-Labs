@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="app_title_spacing">12dp</dimen>
+    <dimen name="app_logo_size">30dp</dimen>
+
+    <dimen name="form_radius">15dp</dimen>
+    <dimen name="button_radius">36dp</dimen>
+    <dimen name="form_height">64dp</dimen>
+
+    <dimen name="filter_size">64dp</dimen>
+    <dimen name="filter_radius">25dp</dimen>
+
+    <dimen name="play_button_size">48dp</dimen>
+    <dimen name="play_button_radius">20dp</dimen>
+    <dimen name="play_button_icon">12dp</dimen>
+
+    <dimen name="padding">16dp</dimen>
+    <dimen name="double_padding">32dp</dimen>
+    <dimen name="four_padding">64dp</dimen>
+
+    <dimen name="x_margin">20dp</dimen>
+    <dimen name="half_x_margin">10dp</dimen>
+    <dimen name="double_x_margin">40dp</dimen>
+    <dimen name="three_x_margin">60dp</dimen>
+
+    <dimen name="y_margin">24dp</dimen>
+    <dimen name="double_y_margin">48dp</dimen>
+    <dimen name="half_y_margin">12dp</dimen>
+
+    <dimen name="z_margin">36dp</dimen>
+
+    <dimen name="item_y_padding">20dp</dimen>
+    <dimen name="item_text_padding">6dp</dimen>
+
+    <dimen name="title">36sp</dimen>
+    <dimen name="header">28sp</dimen>
+    <dimen name="section">24sp</dimen>
+    <dimen name="subsection">20sp</dimen>
+    <dimen name="course_title">18sp</dimen>
+    <dimen name="paragraph">16sp</dimen>
+    <dimen name="spacing">10sp</dimen>
+
+    <dimen name="card_bottom_padding">20dp</dimen>
+    <dimen name="card_image_margin">10dp</dimen>
+    <dimen name="card_margin">12dp</dimen>
+    <dimen name="card_bottom_margin">16dp</dimen>
+    <dimen name="card_horizontal_padding">16dp</dimen>
+    <dimen name="card_vertical_padding">6dp</dimen>
+    <dimen name="card_subtitle_margin">4dp</dimen>
+
+    <dimen name="card_title">18sp</dimen>
+    <dimen name="card_subtitle">11sp</dimen>
+    <dimen name="card_spacing">6sp</dimen>
+
+    <dimen name="button_bottom_margin">32dp</dimen>
+    <dimen name="controls_padding">16dp</dimen>
+
+    <dimen name="track_progress_height">4dp</dimen>
+    <dimen name="track_title_width">180dp</dimen>
+    <dimen name="track_play_button_size">88dp</dimen>
+
+    <dimen name="chip_size">40dp</dimen>
+
+    <dimen name="illustration_max_height">200dp</dimen>
+</resources>

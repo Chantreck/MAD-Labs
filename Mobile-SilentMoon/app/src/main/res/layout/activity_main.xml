@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".main_activity.MainActivity">
+
+    <ImageView
+        android:id="@+id/backgroundImageView"
+        style="@style/full_width_image"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/main_bg" />
+
+    <TextView
+        android:id="@+id/silentTextView"
+        style="@style/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/silent"
+        app:layout_constraintBottom_toBottomOf="@id/appLogoImageView"
+        app:layout_constraintEnd_toStartOf="@id/appLogoImageView"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/appLogoImageView" />
+
+    <ImageView
+        android:id="@+id/appLogoImageView"
+        android:layout_width="@dimen/app_logo_size"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/app_title_spacing"
+        android:layout_marginTop="@dimen/y_margin"
+        android:adjustViewBounds="true"
+        app:layout_constraintLeft_toRightOf="@id/silentTextView"
+        app:layout_constraintRight_toLeftOf="@id/moonTextView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/app_logo" />
+
+    <TextView
+        android:id="@+id/moonTextView"
+        style="@style/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/moon"
+        app:layout_constraintBottom_toBottomOf="@id/appLogoImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/appLogoImageView"
+        app:layout_constraintTop_toTopOf="@id/appLogoImageView" />
+
+    <ImageView
+        android:id="@+id/illustrationImageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/z_margin"
+        android:layout_marginTop="@dimen/z_margin"
+        android:adjustViewBounds="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appLogoImageView"
+        app:srcCompat="@drawable/main_illustration" />
+
+    <TextView
+        android:id="@+id/headerTextView"
+        style="@style/bold_header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/y_margin"
+        android:layout_marginTop="@dimen/z_margin"
+        android:text="@string/main_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/illustrationImageView" />
+
+    <TextView
+        android:id="@+id/subtitleTextView"
+        style="@style/centered_paragraph"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/half_x_margin"
+        android:text="@string/main_subtitle"
+        app:layout_constraintEnd_toEndOf="@id/headerTextView"
+        app:layout_constraintStart_toStartOf="@id/headerTextView"
+        app:layout_constraintTop_toBottomOf="@id/headerTextView" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signUpButton"
+        style="@style/accent_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/x_margin"
+        android:text="@string/sign_up"
+        app:layout_constraintBottom_toTopOf="@id/signInDescTextView"
+        app:layout_constraintEnd_toEndOf="@id/headerTextView"
+        app:layout_constraintStart_toStartOf="@id/headerTextView" />
+
+    <TextView
+        android:id="@+id/signInDescTextView"
+        style="@style/centered_caps_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/double_padding"
+        android:text="@string/main_have_account"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/headerTextView"
+        app:layout_constraintStart_toStartOf="@id/headerTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

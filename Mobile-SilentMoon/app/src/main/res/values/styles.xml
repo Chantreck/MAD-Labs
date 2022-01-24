@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="app_title">
+        <item name="android:textSize">@dimen/paragraph</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.25</item>
+        <item name="android:textColor">@color/dark</item>
+    </style>
+
+    <style name="button" parent="Widget.MaterialComponents.Button.OutlinedButton.Icon">
+        <item name="android:paddingTop">@dimen/y_margin</item>
+        <item name="android:paddingBottom">@dimen/y_margin</item>
+        <item name="cornerRadius">@dimen/button_radius</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="iconGravity">start</item>
+        <item name="iconPadding">@dimen/y_margin</item>
+        <item name="iconSize">@dimen/y_margin</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="iconTint">@color/transparent</item>
+        <item name="iconTintMode">add</item>
+        <item name="strokeWidth">0dp</item>
+    </style>
+
+    <style name="accent_button" parent="button">
+        <item name="android:backgroundTint">@color/accent</item>
+    </style>
+
+    <style name="light_button" parent="button">
+        <item name="android:backgroundTint">@color/light_button</item>
+        <item name="android:textColor">@color/dark</item>
+    </style>
+
+    <style name="facebook_button" parent="button">
+        <item name="android:backgroundTint">@color/facebook</item>
+        <item name="android:text">@string/facebook</item>
+    </style>
+
+    <style name="google_button" parent="button">
+        <item name="android:text">@string/google</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="strokeColor">@color/light_button</item>
+    </style>
+
+    <style name="card_button" parent="button">
+        <item name="android:paddingHorizontal">@dimen/card_horizontal_padding</item>
+        <item name="android:paddingVertical">@dimen/card_vertical_padding</item>
+        <item name="android:textSize">@dimen/card_subtitle</item>
+        <item name="fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="full_width_image">
+        <item name="android:scaleType">fitStart</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
+    <style name="full_screen_image">
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="checkbox">
+        <item name="colorControlActivated">@color/accent</item>
+    </style>
+
+    <style name="header">
+        <item name="android:textSize">@dimen/header</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="android:lineSpacingExtra">@dimen/spacing</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="bold_header" parent="header">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="bold_night_header" parent="bold_header">
+        <item name="android:textColor">@color/night</item>
+    </style>
+
+    <style name="light_header" parent="header">
+        <item name="android:textColor">@color/light</item>
+    </style>
+
+    <style name="bold_light_header" parent="light_header">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="left_header" parent="header">
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+
+    <style name="bold_left_header" parent="left_header">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="bold_left_night_header" parent="bold_left_header">
+        <item name="android:textColor">@color/night</item>
+    </style>
+
+    <style name="section">
+        <item name="android:textSize">@dimen/section</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="night_section">
+        <item name="android:textSize">@dimen/section</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/night</item>
+    </style>
+
+    <style name="bold_night_section" parent="night_section">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="subsection">
+        <item name="android:textSize">@dimen/subsection</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="dark_subsection" parent="subsection">
+        <item name="android:textColor">@color/dark</item>
+    </style>
+
+    <style name="paragraph">
+        <item name="android:textSize">@dimen/paragraph</item>
+        <item name="android:lineSpacingExtra">@dimen/spacing</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="centered_paragraph" parent="paragraph">
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="centered_light_paragraph" parent="centered_paragraph">
+        <item name="android:textColor">@color/light</item>
+    </style>
+
+    <style name="welcome_sleep_desc">
+        <item name="android:textSize">@dimen/paragraph</item>
+        <item name="android:textColor">@color/night</item>
+        <item name="fontFamily">sans-serif-light</item>
+        <item name="android:lineSpacingExtra">@dimen/spacing</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="sleep_desc" parent="welcome_sleep_desc">
+        <item name="android:lineSpacingExtra">@dimen/card_spacing</item>
+    </style>
+
+    <style name="item_title" parent="paragraph">
+        <item name="android:textColor">@color/dark</item>
+    </style>
+
+    <style name="caps_text">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="bold_caps_text" parent="caps_text">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="bold_night_caps_text" parent="bold_caps_text">
+        <item name="android:textColor">@color/dark_gray</item>
+    </style>
+
+    <style name="centered_caps_text" parent="caps_text">
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="time">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">@dimen/paragraph</item>
+        <item name="android:textColor">@color/dark</item>
+    </style>
+
+    <style name="night_time" parent="time">
+        <item name="android:textColor">@color/track_night_active</item>
+    </style>
+
+    <style name="course_title">
+        <item name="android:textSize">@dimen/course_title</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="card_title">
+        <item name="android:textSize">@dimen/card_title</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:lineSpacingExtra">@dimen/card_spacing</item>
+    </style>
+
+    <style name="card_subtitle">
+        <item name="android:textSize">@dimen/card_subtitle</item>
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="play_button">
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="iconSize">@dimen/play_button_icon</item>
+        <item name="iconPadding">0dp</item>
+        <item name="shapeAppearanceOverlay">@style/play_button_shape</item>
+    </style>
+
+    <style name="play_button_shape">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="day_chip">
+        <item name="chipMinTouchTargetSize">0dp</item>
+        <item name="android:layout_width">@dimen/chip_size</item>
+        <item name="android:layout_height">@dimen/chip_size</item>
+        <item name="textStartPadding">0dp</item>
+        <item name="textEndPadding">0dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="chipBackgroundColor">@drawable/selector_day_bg</item>
+        <item name="chipStrokeColor">@drawable/selector_day_stroke</item>
+        <item name="android:textColor">@drawable/selector_day_text</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="android:checkable">true</item>
+        <item name="checkedIcon">@null</item>
+    </style>
+
+</resources>

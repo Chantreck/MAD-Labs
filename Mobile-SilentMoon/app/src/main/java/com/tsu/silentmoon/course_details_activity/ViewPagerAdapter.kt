@@ -1,0 +1,14 @@
+package com.tsu.silentmoon.course_details_activity
+
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentActivity
+import androidx.viewpager2.adapter.FragmentStateAdapter
+
+class ViewPagerAdapter(fragment: FragmentActivity): FragmentStateAdapter(fragment) {
+    override fun getItemCount(): Int = 2;
+
+    override fun createFragment(position: Int): Fragment {
+        val fragment = NarratorsFragment();
+        return fragment;
+    }
+}

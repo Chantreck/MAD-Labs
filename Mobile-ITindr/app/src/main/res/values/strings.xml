@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">ITindr</string>
+
+    <!-- Buttons -->
+    <string name="log_in">Войти</string>
+    <string name="sign_up">Зарегистрироваться</string>
+    <string name="back">Назад</string>
+    <string name="save">Сохранить</string>
+    <string name="choose_picture">Выбрать фото</string>
+    <string name="delete_picture">Удалить фото</string>
+
+    <!-- Input Hints -->
+    <string name="email">E-mail</string>
+    <string name="password">Пароль</string>
+    <string name="name">Имя</string>
+    <string name="about">О себе</string>
+
+    <!-- Main Activity -->
+    <string name="app_description">Ты найдешь того, кто\nпоревьюит твой код</string>
+
+    <!-- Sign-In Activity -->
+    <string name="authorization">Авторизация</string>
+
+    <!-- Sign Up Activity -->
+    <string name="registration">Регистрация</string>
+    <string name="repeat_password">Повторите пароль</string>
+
+    <!-- About Activity -->
+    <string name="tell_about">Расскажи о себе</string>
+    <string name="pick_interests">Укажи интересы</string>
+
+    <!-- Hub Activity -->
+    <string name="feed">Поиск</string>
+    <string name="people">Люди</string>
+    <string name="chats">Чаты</string>
+    <string name="profile">Профиль</string>
+
+    <!-- Feed -->
+    <string name="refuse">Отказ</string>
+    <string name="like">Лайк</string>
+    <string name="match">Ваши интерфейсы подошли друг к другу</string>
+    <string name="write_message">Написать сообщение</string>
+    <string name="feed_placeholder">Увы, пока что никого нет!</string>
+
+    <!-- Profile -->
+    <string name="name_placeholder">Имя не указано</string>
+    <string name="description_placeholder">Начинающий программист</string>
+    <string name="edit">Редактировать</string>
+    <string name="edit_toolbar">Редактирование</string>
+    <string name="interests">Интересы</string>
+
+    <!-- Chat Activity -->
+    <string name="message">Сообщение…</string>
+    <string name="image">Изображение</string>
+
+    <!-- Placeholders -->
+    <string name="message_placeholder">Lorem ipsum dolor sit amet, consecrated advising elite suspense</string>
+    <string name="date_placeholder">12:53 • 23 августа 2021</string>
+
+    <!-- Choose Picture Dialog -->
+    <string name="dialog_title">Выберите способ загрузки изображения</string>
+    <string name="camera">Камера</string>
+    <string name="gallery">Галерея</string>
+
+    <!-- Error Messages -->
+    <string name="image_upload_error">Произошла ошибка при загрузке изображения</string>
+    <string name="allow_camera_message">Разрешите доступ к камере через настройки</string>
+    <string name="camera_not_allowed">Доступ к камере запрещен</string>
+    <string name="email_incorrect">Введите корректный адрес</string>
+    <string name="password_empty">Введите пароль</string>
+    <string name="password_short">Пароль должен быть не меньше 8 символов</string>
+    <string name="passwords_not_match">Пароли не совпадают</string>
+    <string name="name_is_empty">Введите имя</string>
+
+    <!-- Messages -->
+    <string name="liked">Лайк поставлен</string>
+    <string name="disliked">Дизлайк поставлен</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

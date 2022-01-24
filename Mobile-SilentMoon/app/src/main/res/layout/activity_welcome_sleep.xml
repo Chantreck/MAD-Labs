@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/night_bg"
+    android:fitsSystemWindows="true"
+    tools:context=".welcome_sleep_activity.WelcomeSleepActivity">
+
+    <ImageView
+        style="@style/full_screen_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/welcome_sleep_bg" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        style="@style/bold_night_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/y_margin"
+        android:layout_marginTop="@dimen/four_padding"
+        android:text="@string/welcome_sleep"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/subtitleTextView"
+        style="@style/welcome_sleep_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/y_margin"
+        android:layout_marginTop="@dimen/y_margin"
+        android:text="@string/welcome_sleep_desc"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginVertical="@dimen/y_margin"
+        android:adjustViewBounds="true"
+        android:maxHeight="@dimen/illustration_max_height"
+        android:scaleType="fitCenter"
+        android:src="@drawable/welcome_sleep_illustration"
+        app:layout_constraintBottom_toTopOf="@id/getStartedButton"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subtitleTextView" />
+
+    <Button
+        android:id="@+id/getStartedButton"
+        style="@style/accent_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/y_margin"
+        android:layout_marginBottom="@dimen/button_bottom_margin"
+        android:text="@string/get_started"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

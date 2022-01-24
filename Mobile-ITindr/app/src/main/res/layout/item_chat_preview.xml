@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/chatLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/chatProfileImage"
+        android:layout_width="@dimen/chat_preview_image"
+        android:layout_height="@dimen/chat_preview_image"
+        android:layout_margin="@dimen/margin"
+        android:background="@drawable/shape_profile_picture"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_default_profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/chatNameText"
+        style="@style/Chat.Preview.Name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin"
+        android:layout_marginBottom="@dimen/chat_preview_margin"
+        android:text="@string/name_placeholder"
+        app:layout_constraintBottom_toTopOf="@id/chatMessageText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/chatProfileImage"
+        app:layout_constraintTop_toTopOf="@id/chatProfileImage" />
+
+    <TextView
+        android:id="@+id/chatMessageText"
+        style="@style/Chat.Preview.Message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="@string/message_placeholder"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/chatProfileImage"
+        app:layout_constraintEnd_toStartOf="@id/chatDateText"
+        app:layout_constraintStart_toEndOf="@id/chatProfileImage"
+        app:layout_constraintTop_toBottomOf="@id/chatNameText" />
+
+    <TextView
+        android:id="@+id/chatDateText"
+        style="@style/Chat.Preview.Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/chatMessageText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/chatMessageText"
+        app:layout_constraintTop_toTopOf="@id/chatMessageText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

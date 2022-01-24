@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Button">
+        <item name="android:paddingVertical">@dimen/button_padding</item>
+        <item name="android:textColor">@color/accent</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="fontFamily">@font/montserrat_bold</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="cornerRadius">@dimen/corner_radius</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+
+    <style name="Button.Icon">
+        <item name="iconTint">@color/accent</item>
+        <item name="iconPadding">@dimen/margin</item>
+        <item name="android:paddingStart">@dimen/alt_margin</item>
+        <item name="android:paddingEnd">@dimen/margin_2x</item>
+        <item name="iconSize">@dimen/button_icon_size</item>
+        <item name="iconGravity">textStart</item>
+    </style>
+
+    <style name="Button.Accent">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/shape_accent_button</item>
+    </style>
+
+    <style name="Button.Accent.Icon">
+        <item name="iconTint">@color/white</item>
+        <item name="iconPadding">@dimen/margin</item>
+        <item name="android:paddingStart">@dimen/alt_margin</item>
+        <item name="android:paddingEnd">@dimen/margin_2x</item>
+        <item name="iconSize">@dimen/button_icon_size</item>
+        <item name="iconGravity">textStart</item>
+    </style>
+
+    <style name="Button.Accent.IconNoTitle">
+        <item name="iconTint">@color/white</item>
+        <item name="iconSize">@dimen/alt_margin</item>
+    </style>
+
+    <style name="Button.Transparent" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="textAllCaps">false</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="fontFamily">@font/montserrat_bold</item>
+    </style>
+
+    <style name="SectionTitle">
+        <item name="android:textColor">@color/accent</item>
+        <item name="android:textSize">@dimen/section_title</item>
+        <item name="fontFamily">@font/montserrat_bold</item>
+    </style>
+
+    <style name="Input">
+        <item name="android:textColorHint">@color/input_hint</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textSize">@dimen/text_size</item>
+    </style>
+
+    <style name="InterestChip">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="chipMinTouchTargetSize">0dp</item>
+        <item name="android:layout_height">@dimen/interest_chip_height</item>
+        <item name="chipBackgroundColor">@color/selector_interest_background</item>
+        <item name="chipStrokeColor">@color/accent</item>
+        <item name="android:textColor">@color/selector_interest_text</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="android:checkable">true</item>
+        <item name="checkedIcon">@null</item>
+        <item name="textEndPadding">@dimen/margin_half</item>
+        <item name="android:textAppearance">@style/InterestChip.TextAppearance</item>
+    </style>
+
+    <style name="InterestChip.TextAppearance" parent="TextAppearance.AppCompat.Body2">
+        <item name="fontFamily">@font/montserrat_bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="MenuTextAppearance">
+        <item name="fontFamily">@font/montserrat</item>
+    </style>
+
+    <style name="Toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/input_height</item>
+        <item name="titleTextColor">@color/accent</item>
+        <item name="titleTextAppearance">@style/Toolbar.TextAppearance</item>
+        <item name="navigationIconTint">@color/accent</item>
+    </style>
+
+    <style name="Toolbar.Layout">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:elevation">@dimen/margin_half</item>
+    </style>
+
+    <style name="Toolbar.Transparent">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="Toolbar.TextAppearance">
+        <item name="fontFamily">@font/montserrat_semibold</item>
+        <item name="android:textSize">@dimen/toolbar_title</item>
+        <item name="android:textColor">@color/accent</item>
+    </style>
+
+    <style name="NameTitle">
+        <item name="android:textSize">@dimen/section_title</item>
+        <item name="fontFamily">@font/montserrat_bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="NameTitle.BigProfile">
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Text">
+        <item name="fontFamily">@font/montserrat</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="Text.BigProfile">
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Match">
+        <item name="fontFamily">@font/montserrat_bold</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="Chat" />
+
+    <style name="Chat.Message">
+        <item name="fontFamily">@font/montserrat</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size</item>
+    </style>
+
+    <style name="Chat.Date">
+        <item name="fontFamily">@font/montserrat</item>
+        <item name="android:textColor">@color/input_hint</item>
+        <item name="android:textSize">@dimen/small_text</item>
+    </style>
+
+    <style name="Chat.Preview" />
+
+    <style name="Chat.Preview.Name">
+        <item name="fontFamily">@font/montserrat_bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size</item>
+    </style>
+
+    <style name="Chat.Preview.Message">
+        <item name="fontFamily">@font/montserrat</item>
+        <item name="android:textColor">@color/message_preview</item>
+        <item name="android:textSize">@dimen/text_size</item>
+    </style>
+
+    <style name = "Chat.Preview.Date">
+        <item name="fontFamily">@font/montserrat</item>
+        <item name="android:textSize">@dimen/small_text</item>
+    </style>
+
+    <style name="Chat.Preview.Attachment">
+        <item name="fontFamily">@font/montserrat_italic</item>
+    </style>
+
+    <style name="ProgressBar">
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+    <style name="PersonName">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+    </style>
+
+    <style name="PersonName.NoName">
+        <item name="android:textColor">@color/message_preview</item>
+    </style>
+</resources>

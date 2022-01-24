@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".chat_activity.ChatActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbarLayout"
+        style="@style/Toolbar.Layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            style="@style/Toolbar"
+            app:navigationIcon="@drawable/ic_back">
+
+            <ImageView
+                android:id="@+id/toolbarProfileImage"
+                android:layout_width="@dimen/margin_2x"
+                android:layout_height="@dimen/margin_2x"
+                android:layout_gravity="start"
+                android:background="@drawable/shape_profile_picture"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_default_profile" />
+
+            <TextView
+                android:id="@+id/toolbarNameText"
+                style="@style/Toolbar.TextAppearance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:paddingStart="@dimen/margin_half"
+                android:text="@string/name_placeholder" />
+
+        </com.google.android.material.appbar.MaterialToolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/messagesRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/margin"
+        app:layout_constraintBottom_toTopOf="@id/messageInput"
+        app:layout_constraintTop_toBottomOf="@id/toolbarLayout" />
+
+    <ImageButton
+        android:id="@+id/cameraButton"
+        android:layout_width="@dimen/chat_button"
+        android:layout_height="@dimen/chat_button"
+        android:layout_margin="16dp"
+        android:background="@drawable/shape_camera_button"
+        android:src="@drawable/ic_camera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/messageInput"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/messageInput"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin"
+        app:hintEnabled="false"
+        app:layout_constraintBottom_toTopOf="@id/attachmentImage"
+        app:layout_constraintEnd_toStartOf="@id/sendButton"
+        app:layout_constraintStart_toEndOf="@id/cameraButton">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/messageEditText"
+            style="@style/Input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_message_input"
+            android:gravity="top"
+            android:hint="@string/message"
+            android:inputType="textMultiLine"
+            android:maxHeight="@dimen/about_input_height"
+            android:paddingHorizontal="@dimen/margin"
+            android:paddingVertical="@dimen/message_input_padding" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageButton
+        android:id="@+id/sendButton"
+        android:layout_width="@dimen/chat_button"
+        android:layout_height="@dimen/chat_button"
+        android:layout_margin="@dimen/margin"
+        android:background="@drawable/shape_accent_button"
+        android:src="@drawable/ic_send"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/messageInput" />
+
+    <ImageView
+        android:id="@+id/attachmentImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin"
+        android:adjustViewBounds="true"
+        android:background="@drawable/shape_rounded_image"
+        android:maxHeight="@dimen/about_input_height"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/messageInput"
+        app:layout_constraintStart_toStartOf="@id/messageInput"
+        app:layout_goneMarginBottom="0dp" />
+
+    <ImageView
+        android:id="@+id/removeAttachmentButton"
+        android:layout_width="@dimen/alt_margin"
+        android:layout_height="@dimen/alt_margin"
+        android:src="@drawable/ic_remove"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/attachmentImage"
+        app:layout_constraintTop_toTopOf="@id/attachmentImage"
+        android:layout_margin="@dimen/margin_half"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/ProgressBar"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/messagesRecyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

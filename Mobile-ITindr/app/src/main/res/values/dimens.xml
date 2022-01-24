@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_4th">4dp</dimen>
+    <dimen name="margin_half">8dp</dimen>
+    <dimen name="margin">16dp</dimen>
+    <dimen name="margin_2x">32dp</dimen>
+    <dimen name="margin_4x">64dp</dimen>
+
+    <dimen name="alt_margin">24dp</dimen>
+
+    <dimen name="top_margin">40dp</dimen>
+    <dimen name="bottom_margin">44dp</dimen>
+    <dimen name="illustration_margin">20dp</dimen>
+    <dimen name="match_margin">144dp</dimen>
+
+    <dimen name="button_padding">18dp</dimen>
+    <dimen name="button_icon_size">24dp</dimen>
+    <dimen name="corner_radius">28dp</dimen>
+
+    <dimen name="small_text">12sp</dimen>
+    <dimen name="text_size">16sp</dimen>
+    <dimen name="toolbar_title">20sp</dimen>
+    <dimen name="section_title">24sp</dimen>
+
+    <dimen name="main_app_logo">48dp</dimen>
+    <dimen name="app_logo">56dp</dimen>
+    <dimen name="app_logo_padding">10dp</dimen>
+
+    <dimen name="input_height">56dp</dimen>
+    <dimen name="input_padding">24dp</dimen>
+    <dimen name="about_input_height">128dp</dimen>
+
+    <dimen name="profile_picture_size">88dp</dimen>
+    <dimen name="interest_chip_height">24dp</dimen>
+
+    <dimen name="menu_icon_size">20dp</dimen>
+
+    <dimen name="big_profile_picture">206dp</dimen>
+
+    <dimen name="chat_preview_image">64dp</dimen>
+    <dimen name="chat_preview_margin">4dp</dimen>
+
+    <dimen name="chat_button">40dp</dimen>
+    <dimen name="message_input_padding">10dp</dimen>
+    <dimen name="chat_sender_image">32dp</dimen>
+    <dimen name="message_max_margin">56dp</dimen>
+</resources>

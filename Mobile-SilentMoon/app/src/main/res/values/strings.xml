@@ -1,0 +1,138 @@
+<resources>
+    <string name="app_name">SilentMoon</string>
+    <string name="silent">Silent</string>
+    <string name="moon">Moon</string>
+
+    <string name="sign_up">Sign up</string>
+    <string name="log_in">Log in</string>
+
+    <!-- MainActivity -->
+    <string name="main_header">We are what we do</string>
+    <string name="main_subtitle">Thousands of people are using Silent Moon\nfor smalls meditation</string>
+    <string name="main_have_account">Already have an account? Sign in</string>
+
+    <!-- Sign In -->
+    <string name="sign_in_header">Welcome Back!</string>
+    <string name="facebook">Continue with Facebook</string>
+    <string name="google">Continue with Google</string>
+    <string name="use_email">Or log in with email</string>
+    <string name="email">Email address</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_up_desc">Don\'t have an account? Sign up</string>
+
+    <!-- Sign Up -->
+    <string name="sign_up_header">Create Your Account</string>
+    <string name="sign_up_email">Or sign up with email</string>
+    <string name="name">Your name</string>
+    <string name="policy_check">I have read the privacy policy</string>
+    <string name="policy">There will be a privacy policy</string>
+
+    <!-- Welcome -->
+    <string name="get_started">Get Started</string>
+    <string name="welcome">Hi , welcome\nto Silent Moon</string>
+    <string name="welcome_subtitle">Explore the app, find some peace of mind\nto prepare for meditation.</string>
+    <string name="username">User</string>
+
+    <!-- Choose Topic -->
+    <string name="choose_topic_title">What brings you\nto Silent Moon?</string>
+    <string name="choose_topic_subtitle">choose a topic to focus on:</string>
+    <string name="reduce_stress">Reduce Stress</string>
+    <string name="improve_performance">Improve Performance</string>
+    <string name="reduce_anxiety">Reduce Anxiety</string>
+    <string name="increase_happiness">Increase Happiness</string>
+    <string name="personal_growth">Personal Growth</string>
+    <string name="better_sleep">Better Sleep</string>
+    <string name="empty"></string>
+
+    <!-- Reminders -->
+    <string name="reminder_time_title">What time would you\nlike to meditate?</string>
+    <string name="reminder_time_subtitle">Any time you can choose, but we recommend\nthe first thing in the morning.</string>
+    <string name="reminder_day_title">What day would you\nlike to meditate?</string>
+    <string name="reminder_day_subtitle">Everyday is best, but we recommend picking\nat least five.</string>
+    <string name="save">Save</string>
+    <string name="no_thanks">No thanks</string>
+    <string name="monday">M</string>
+    <string name="tuesday">T</string>
+    <string name="wednesday">W</string>
+    <string name="thursday">TH</string>
+    <string name="friday">F</string>
+    <string name="saturday">S</string>
+    <string name="sunday">SU</string>
+
+    <!-- Home -->
+    <string name="menu_home">Home</string>
+    <string name="menu_sleep">Sleep</string>
+    <string name="menu_meditate">Meditate</string>
+    <string name="menu_music">Music</string>
+    <string name="menu_profile">Profile</string>
+    <string name="home_title">Good Morning,</string>
+    <string name="home_subsection">We wish you have a good day</string>
+    <string name="basics">Basics</string>
+    <string name="relaxation">Relaxation</string>
+    <string name="course">Course</string>
+    <string name="music">Music</string>
+    <string name="duration">3–10 min</string>
+    <string name="start">Start</string>
+    <string name="daily_thoughts">Daily Thoughts</string>
+    <string name="meditation">Meditation • 3–10 min</string>
+    <string name="recommended">Recommended for you</string>
+    <string name="focus">Focus</string>
+    <string name="happiness">Happiness</string>
+
+    <!-- Course Details -->
+    <string name="happy_morning">Happy Morning</string>
+    <string name="course_desc">Ease the mind into a restful night\'s sleep with these deep, ambient tones.</string>
+    <string name="favourites">24.234 Favourites</string>
+    <string name="listening">34.234 Listening</string>
+    <string name="narrator">Pick a Narrator</string>
+    <string name="male">Male voice</string>
+    <string name="female">Female voice</string>
+    <string name="focus_attention">Focus Attention</string>
+    <string name="body_scan">Body Scan</string>
+    <string name="making_happiness">Making Happiness</string>
+    <string name="long_duration">10 min</string>
+    <string name="medium_duration">5 min</string>
+    <string name="short_duration">3 min</string>
+
+    <!-- Meditate -->
+    <string name="meditate">Meditate</string>
+    <string name="meditate_desc">We can learn how to recognize when our minds are doing their normal everyday acrobatics</string>
+    <string name="all">All</string>
+    <string name="my">My</string>
+    <string name="anxious">Anxious</string>
+    <string name="sleep">Sleep</string>
+    <string name="kids">Kids</string>
+    <string name="daily_calm">Daily Calm</string>
+    <string name="daily_calm_desc">Apr 30 • Pause practise</string>
+    <string name="days_of_calm">7 Days of Calm</string>
+    <string name="anxiety_release">Anxiety Release</string>
+    <string name="how_to_meditate">How to Meditate</string>
+
+    <!-- Music -->
+    <string name="like">Like</string>
+    <string name="download">Download</string>
+    <string name="zero_seconds">00:00</string>
+    <string name="track_duration">45:00</string>
+
+    <!-- Welcome Sleep -->
+    <string name="welcome_sleep">Welcome to Sleep</string>
+    <string name="welcome_sleep_desc">Explore the new king of sleep. It uses sound and visualization to create perfect conditions for refreshing sleep.</string>
+
+    <!-- Sleep -->
+    <string name="sleep_stories">Sleep Stories</string>
+    <string name="sleep_stories_desc">Soothing bedtime stories to help you fall into a deep and natural sleep</string>
+    <string name="ocean_moon">The Ocean Moon</string>
+    <string name="ocean_moon_desc">Non-stop 8-hour mixes of our most popular sleep audio</string>
+    <string name="night_island">Night Island</string>
+    <string name="sweet_sleep">Sweet Sleep</string>
+    <string name="sleep_music_duration">45 min • Sleep music</string>
+
+    <!-- Play option -->
+    <string name="night_island_desc">Ease the mind into a restful night’s sleep with these deep, ambient tones.</string>
+    <string name="related">Related</string>
+    <string name="good_night">Good Night</string>
+    <string name="moon_clouds">Moon Clouds</string>
+    <string name="sleep_music">Sleep music</string>
+    <string name="play">Play</string>
+</resources>

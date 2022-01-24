@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home_activity.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/silentTextView"
+            style="@style/app_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/silent"
+            app:layout_constraintBottom_toBottomOf="@id/appLogoImageView"
+            app:layout_constraintEnd_toStartOf="@id/appLogoImageView"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/appLogoImageView" />
+
+        <ImageView
+            android:id="@+id/appLogoImageView"
+            android:layout_width="@dimen/app_logo_size"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/app_title_spacing"
+            android:layout_marginTop="@dimen/y_margin"
+            android:adjustViewBounds="true"
+            app:layout_constraintLeft_toRightOf="@id/silentTextView"
+            app:layout_constraintRight_toLeftOf="@id/moonTextView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/app_logo" />
+
+        <TextView
+            android:id="@+id/moonTextView"
+            style="@style/app_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/moon"
+            app:layout_constraintBottom_toBottomOf="@id/appLogoImageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/appLogoImageView"
+            app:layout_constraintTop_toTopOf="@id/appLogoImageView" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            style="@style/bold_left_header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/x_margin"
+            android:layout_marginTop="@dimen/double_x_margin"
+            android:layout_marginEnd="@dimen/x_margin"
+            android:text="@string/home_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/appLogoImageView" />
+
+        <TextView
+            android:id="@+id/subtitleTextView"
+            style="@style/subsection"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/half_x_margin"
+            android:text="@string/home_subsection"
+            app:layout_constraintEnd_toEndOf="@id/titleTextView"
+            app:layout_constraintStart_toStartOf="@id/titleTextView"
+            app:layout_constraintTop_toBottomOf="@id/titleTextView" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/courseRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/half_x_margin"
+            android:layout_marginTop="@dimen/y_margin"
+            android:layout_marginEnd="@dimen/half_x_margin"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/subtitleTextView"
+            app:spanCount="2"
+            tools:itemCount="2"
+            tools:listitem="@layout/item_course" />
+
+        <ImageView
+            android:id="@+id/dailyThoughtsImageView"
+            style="@style/full_width_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/x_margin"
+            android:layout_marginTop="@dimen/x_margin"
+            android:background="@drawable/daily_thought_meditation"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/courseRecyclerView" />
+
+        <ToggleButton
+            android:id="@+id/playButton"
+            android:layout_width="@dimen/play_button_size"
+            android:layout_height="@dimen/play_button_size"
+            android:layout_marginEnd="@dimen/x_margin"
+            android:background="@drawable/btn_play_night_toggle"
+            android:textOff=""
+            android:textOn=""
+            app:layout_constraintBottom_toBottomOf="@id/dailyThoughtsImageView"
+            app:layout_constraintRight_toRightOf="@id/dailyThoughtsImageView"
+            app:layout_constraintTop_toTopOf="@id/dailyThoughtsImageView" />
+
+        <TextView
+            android:id="@+id/dailyThoughtsTitleTextView"
+            style="@style/course_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/y_margin"
+            android:layout_marginBottom="@dimen/card_vertical_padding"
+            android:text="@string/daily_thoughts"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@id/dailyThoughtsDurationTextView"
+            app:layout_constraintLeft_toLeftOf="@id/dailyThoughtsImageView"
+            app:layout_constraintRight_toLeftOf="@id/playButton"
+            app:layout_constraintTop_toTopOf="@id/dailyThoughtsImageView"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/dailyThoughtsDurationTextView"
+            style="@style/card_subtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/y_margin"
+            android:text="@string/meditation"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/dailyThoughtsImageView"
+            app:layout_constraintLeft_toLeftOf="@id/dailyThoughtsImageView"
+            app:layout_constraintRight_toLeftOf="@id/playButton"
+            app:layout_constraintTop_toBottomOf="@id/dailyThoughtsTitleTextView"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/recommendedTextView"
+            style="@style/section"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/double_x_margin"
+            android:text="@string/recommended"
+            app:layout_constraintEnd_toEndOf="@id/dailyThoughtsImageView"
+            app:layout_constraintStart_toStartOf="@id/dailyThoughtsImageView"
+            app:layout_constraintTop_toBottomOf="@id/dailyThoughtsImageView" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recommendationsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/half_x_margin"
+            android:layout_marginTop="@dimen/x_margin"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/recommendedTextView"
+            app:spanCount="1"
+            tools:itemCount="2"
+            tools:listitem="@layout/item_meditation" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

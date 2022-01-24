@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".sign_up_activity.SignUpActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            style="@style/full_width_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/sign_bg"/>
+
+        <TextView
+            android:id="@+id/headerTextView"
+            style="@style/bold_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y_margin"
+            android:text="@string/sign_up_header"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/facebookButton"
+            style="@style/facebook_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/y_margin"
+            android:layout_marginRight="@dimen/y_margin"
+            android:layout_marginTop="@dimen/y_margin"
+            android:text="@string/facebook"
+            android:paddingStart="@dimen/y_margin"
+            app:icon="@drawable/ic_facebook"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/headerTextView" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/googleButton"
+            style="@style/google_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y_margin"
+            android:text="@string/google"
+            app:icon="@drawable/ic_google"
+            android:paddingStart="@dimen/y_margin"
+            app:layout_constraintLeft_toLeftOf="@id/facebookButton"
+            app:layout_constraintRight_toRightOf="@id/facebookButton"
+            app:layout_constraintTop_toBottomOf="@id/facebookButton"/>
+
+        <TextView
+            android:id="@+id/useEmailTextView"
+            style="@style/centered_caps_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y_margin"
+            android:text="@string/sign_up_email"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toEndOf="@id/facebookButton"
+            app:layout_constraintStart_toStartOf="@id/facebookButton"
+            app:layout_constraintTop_toBottomOf="@id/googleButton"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nameTextInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/form_height"
+            android:layout_marginTop="@dimen/y_margin"
+            app:endIconMode="custom"
+            app:hintEnabled="false"
+            app:endIconDrawable="@drawable/ic_okay"
+            app:endIconTint="@color/green"
+            app:layout_constraintLeft_toLeftOf="@id/facebookButton"
+            app:layout_constraintRight_toRightOf="@id/facebookButton"
+            app:layout_constraintTop_toBottomOf="@id/useEmailTextView"
+            android:singleLine="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/form_background"
+                android:hint="@string/name"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailTextInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/form_height"
+            android:layout_marginTop="@dimen/y_margin"
+            app:endIconMode="custom"
+            app:hintEnabled="false"
+            app:endIconDrawable="@drawable/ic_okay"
+            app:endIconTint="@color/green"
+            app:layout_constraintLeft_toLeftOf="@id/facebookButton"
+            app:layout_constraintRight_toRightOf="@id/facebookButton"
+            app:layout_constraintTop_toBottomOf="@id/nameTextInputLayout"
+            android:singleLine="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/form_background"
+                android:hint="@string/email"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordTextInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/form_height"
+            android:layout_marginTop="@dimen/y_margin"
+            android:singleLine="true"
+            app:hintEnabled="false"
+            app:layout_constraintLeft_toLeftOf="@id/facebookButton"
+            app:layout_constraintRight_toRightOf="@id/facebookButton"
+            app:layout_constraintTop_toBottomOf="@id/emailTextInputLayout"
+            app:passwordToggleDrawable="@drawable/selector_password"
+            app:passwordToggleTint="@color/dark"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/form_background"
+                android:hint="@string/password" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <CheckBox
+            android:id="@+id/privacyCheckBox"
+            style="@style/caps_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y_margin"
+            android:text="@string/policy_check"
+            android:theme="@style/checkbox"
+            app:layout_constraintEnd_toEndOf="@id/facebookButton"
+            app:layout_constraintStart_toStartOf="@id/facebookButton"
+            app:layout_constraintTop_toBottomOf="@id/passwordTextInputLayout" />
+
+        <Button
+            android:id="@+id/logInButton"
+            style="@style/accent_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/double_padding"
+            android:text="@string/get_started"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/facebookButton"
+            app:layout_constraintStart_toStartOf="@id/facebookButton"
+            app:layout_constraintTop_toBottomOf="@id/privacyCheckBox"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
