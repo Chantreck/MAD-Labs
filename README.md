@@ -36,3 +36,4 @@
 * [HITsElka (Хитсолочка)](https://github.com/Chantreck/HitsElka) — проект, посвященный разработке мобильной игры без использования игровых движков. Проект выполнен в паре.   
 * [Калькулятор](https://github.com/Chantreck/MAD-Calculator) — проект, посвященный изучению Jetpack Compose, представляет из себя простой калькулятор.  
 * [WordsFactory](https://github.com/Chantreck/MAD-WordsFactory) — проект, разрабатываемый в рамках подготовки к вузовскому этапу WorldSkills по мобильной разработке. Представляет из себя приложение для зубрежки английских слов.
+* [Roman Numbers Encoder](https://github.com/Chantreck/Roman-Numerals-Encoder) — лабораторная по тестированию ПО. В рамках лабораторной выполнено Unit, интеграционное и end-to-end тестирование мобильного приложения при помощи фреймворков JUnit и Espresso.
